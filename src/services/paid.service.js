@@ -1,5 +1,5 @@
 import {axiosService} from "./axios.service";
-import {urls} from "../configs";
+import {urls} from "../configs/urls";
 
 const paidService = {
     getAllPaid: (query) => axiosService.get(urls.paid.getAllPaid + query,),
@@ -10,6 +10,7 @@ const paidService = {
     createGroup: (data) => axiosService.post(urls.paid.group, data),
 
     getExcel: (query) => axiosService.get(urls.paid.getExcel + query, {responseType: 'arraybuffer'})
-};
+}
+
 
 export {paidService};

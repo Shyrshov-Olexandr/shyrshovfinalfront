@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {paidService} from "../../services";
+import {paidService} from "../../services/paid.service";
 
 const initialState = {
     paidArr: [],
@@ -15,42 +15,46 @@ const initialState = {
     updatedComments:[],
     idArr:[]
 }
-const getAllPaid = createAsyncThunk(
-    'paidSlice/getAllPaid',
+
+const getAllPaid = createAsyncThunk('paidSlice/getAllPaid',
+
     async (page, {_}) => {
+
         try {
-            const {data} = await paidService.getAllPaid(page);
+            const {data} = await paidService.getAllPaid(page)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
-const getPaidById = createAsyncThunk(
-    'paidSlice/getPaidById',
+const getPaidById = createAsyncThunk('paidSlice/getPaidById',
+
     async (id, {_}) => {
         try {
-            const {data} = await paidService.getPaidById(id);
+            const {data} = await paidService.getPaidById(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
-const getPaidForComment = createAsyncThunk(
-    'paidSlice/getPaidForComment',
+const getPaidForComment = createAsyncThunk('paidSlice/getPaidForComment',
+
     async (id, {_}) => {
+
         try {
-            const {data} = await paidService.getPaidById(id);
+            const {data} = await paidService.getPaidById(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
-const patchPaidById = createAsyncThunk(
-    'paidSlice/patchPaidById',
+const patchPaidById = createAsyncThunk('paidSlice/patchPaidById',
+
     async ({editData,id}, {_}) => {
+
         try {
             const {data} = await paidService.changePaidById(editData,id);
             return data;
@@ -59,53 +63,57 @@ const patchPaidById = createAsyncThunk(
         }
     });
 
-const getAllGroups = createAsyncThunk(
-    'paidSlice/getAllGroups',
+const getAllGroups = createAsyncThunk('paidSlice/getAllGroups',
+
     async (_, {__}) => {
+
         try {
-            const {data} = await paidService.getAllGroups();
+            const {data} = await paidService.getAllGroups()
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
-const createGroup = createAsyncThunk(
-    'paidSlice/createGroup',
+const createGroup = createAsyncThunk('paidSlice/createGroup',
+
     async (name, {_}) => {
+
         try {
-            const {data} = await paidService.createGroup(name);
+            const {data} = await paidService.createGroup(name)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
-const closeEditing = createAsyncThunk(
-    'paidSlice/closeEditing',
+const closeEditing = createAsyncThunk('paidSlice/closeEditing',
+
     async (_, {__}) => {
+
         try {
             return true;
         } finally {
 
         }
-    });
+    })
 
-const getExcel = createAsyncThunk(
-    'paidSlice/getExcel',
+const getExcel = createAsyncThunk('paidSlice/getExcel',
+
     async (query, {_}) => {
 
         try {
-            const {data} = await paidService.getExcel(query);
+            const {data} = await paidService.getExcel(query)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
-    });
+    })
 
 
 
 const paidSlice = createSlice({
+
     name: 'paidSlice',
     initialState,
     reducers: {},
@@ -190,10 +198,10 @@ const paidActions = {
     getAllGroups,
     createGroup,
     getExcel
-};
+}
 
 
 export {
     paidActions,
     paidReducer
-};
+}

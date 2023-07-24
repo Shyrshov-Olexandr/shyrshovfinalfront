@@ -1,8 +1,9 @@
-import {urls} from "../configs";
 import {axiosService} from "./axios.service";
+import {urls} from "../configs/urls";
 
 let url = window.location.pathname;
-let activateToken = url.replace('/admin/activate/', '');
+
+let activateToken = url.replace('/admin/activate/', '')
 
 const adminService = {
     getAllUsers: () => axiosService.get(urls.forAdmin.getAllUsers),
@@ -14,6 +15,7 @@ const adminService = {
     unblockUser: async (id) => axiosService.post(urls.forAdmin.unblockUser + "/" + id),
     getStatistics: () => axiosService.get(urls.forAdmin.statistics + "/orders"),
     getUserStatistics: async (id) => axiosService.get(urls.forAdmin.statistics + "/" +id)
+
 };
 
 export {adminService};

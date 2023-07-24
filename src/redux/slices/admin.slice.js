@@ -1,108 +1,116 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {_} from "react-hook-form/dist/__typetest__/__fixtures__";
-import {adminService} from "../../services";
+import {adminService} from "../../services/admin.service";
 
 const initialState = {
     usersArr: [],
-    statisticsArr: [],
-    userStatistics: [],
+    statisticsArr:[],
+    userStatistics:[],
     registerData: [],
     recreatedActivationLink: null
 }
 
-const getAllUsers = createAsyncThunk(
-    'adminSlice/getAllUsers',
+const getAllUsers = createAsyncThunk('adminSlice/getAllUsers',
+
     async (_, {__}) => {
+
         try {
-            const {data} = await adminService.getAllUsers();
+            const {data} = await adminService.getAllUsers()
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const getStatistics = createAsyncThunk(
-    'adminSlice/getStatistics',
+const getStatistics = createAsyncThunk('adminSlice/getStatistics',
+
     async (_, {__}) => {
+
         try {
-            const {data} = await adminService.getStatistics();
+            const {data} = await adminService.getStatistics()
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const getUserStatistics = createAsyncThunk(
-    'adminSlice/getUserStatistics',
+const getUserStatistics = createAsyncThunk('adminSlice/getUserStatistics',
+
     async (id, {__}) => {
+
         try {
-            const {data} = await adminService.getUserStatistics();
+            const {data} = await adminService.getUserStatistics(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const registerUser = createAsyncThunk(
-    'adminSlice/registerUser',
+const registerUser = createAsyncThunk('adminSlice/registerUser',
+
     async (inputData, {__}) => {
+
         try {
-            const {data} = await adminService.registerUser(inputData);
+            const {data} = await adminService.registerUser(inputData)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const activateUser = createAsyncThunk(
-    'adminSlice/activateUser',
+const activateUser = createAsyncThunk('adminSlice/activateUser',
+
     async (inputData, {__}) => {
+
         try {
-            const {data} = await adminService.activateUser(inputData);
+            const {data} = await adminService.activateUser(inputData)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const recreateActivationLink = createAsyncThunk(
-    'adminSlice/activateUser',
+const recreateActivationLink = createAsyncThunk('adminSlice/activateUser',
+
     async (id, {__}) => {
+
         try {
-            const {data} = await adminService.recreateToken(id);
+            const {data} = await adminService.recreateToken(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const deleteUser = createAsyncThunk(
-    'adminSlice/deleteUser',
+const deleteUser = createAsyncThunk('adminSlice/deleteUser',
+
     async (id, {__}) => {
         try {
-            const {data} = await adminService.deleteUser(id);
+            const {data} = await adminService.deleteUser(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const blockUser = createAsyncThunk(
-    'adminSlice/blockUser',
+const blockUser = createAsyncThunk('adminSlice/blockUser',
+
     async (id, {__}) => {
+
         try {
-            const {data} = await adminService.blockUser(id);
+            const {data} = await adminService.blockUser(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
         }
     });
 
-const unblockUser = createAsyncThunk(
-    'adminSlice/unblockUser',
+
+const unblockUser = createAsyncThunk('adminSlice/unblockUser',
+
     async (id, {__}) => {
+
         try {
-            const {data} = await adminService.unblockUser(id);
+            const {data} = await adminService.unblockUser(id)
             return data;
         } catch (e) {
             e.rejectWithValue(e.response.data)
@@ -110,6 +118,7 @@ const unblockUser = createAsyncThunk(
     });
 
 const adminSlice = createSlice({
+
     name: 'adminSlice',
     initialState,
     reducers: {},

@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    border: 1px solid rgba(203, 203, 203, 0.62);
+    width: 80%;
+    padding: 20px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.form input{
+    height:40px;
+    margin-right: 10px;
+    width: fit-content;
+}
+
+.commentSpan{
+    background: deepskyblue;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}

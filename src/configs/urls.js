@@ -15,18 +15,16 @@ const urls = {
             deleteUser: '/admin/delete',
             blockUser: '/admin/block',
             unblockUser: '/admin/unblock',
-            statistics: '/admin/statistics/users'
+            statistics:'/admin/statistics/users'
         },
-    paid:
-        {
-            getAllPaid: 'paid',
-            getExcel: 'paid/excel',
-            group: '/paid/group'
-        },
-    permissions:
-        {
-            createPermission: '/permissions/create'
-        }
+    paid: {
+        getAllPaid: '/paid',
+        getExcel:'/paid/excel',
+        group: '/paid/group'
+    },
+    permissions: {
+        createPermission: '/permissions/create'
+    }
 }
 
 export {baseURL, urls}

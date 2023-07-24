@@ -1,0 +1,458 @@
+.header {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+.mainFather{
+    width: 100%;
+}
+
+.twoButtons {
+    background: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 60px;
+}
+
+.buttonGoBack {
+    background: rgb(28, 181, 224);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonGoBack h1 {
+    position: relative;
+    top: -3px;
+}
+
+.paginator {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    height: 60px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-family: Montserrat, sans-serif;
+}
+.footer{
+    background: linear-gradient(90deg, #000851 0%, #1cb5e0 100%);
+    height: 60px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font-family: Montserrat, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    height: 65px;
+}
+
+
+.button {
+    --color: #F2C53D;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 200;
+    font-size: 12px;
+    border: 1px solid;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    margin: 10px;
+    width: 150px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:disabled{
+    background: none;
+}
+
+.button:active {
+    background: rgb(28, 181, 224);
+}
+
+
+@keyframes spinner {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 50px;
+
+}
+
+.spinning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 50px;
+    animation: spinner .9s linear infinite;
+}
+
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    max-height: 65px;
+    color: white;
+    border-radius: 10px;
+}
+
+.paragraphs p {
+    margin: 5px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    padding-left: 48px;
+}
+
+
+.form div {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+
+
+
+
+.form select {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+}
+
+
+.logout {
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+}
+
+.logout h1 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: color 0.1s;
+    transition-delay: 0.1s;
+}
+
+.logout h1:hover {
+    color: rgba(42, 227, 189, 0.68);
+    transition-delay: 0s;
+}
+
+
+.ordering {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+    /*gap: 10px;*/
+    font-size: 12px;
+    font-weight: 500;
+    -moz-box-align: stretch;
+    align-items: stretch;
+    background-color: rgb(255, 255, 255);
+    min-height: 52px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-left: 48px;
+}
+
+.ordering div {
+    text-align: left;
+    -moz-box-flex: 1;
+    width: 9.7%;
+
+
+    position: relative;
+    -moz-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    line-height: normal;
+
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border-radius: 20px 20px 0 0;
+}
+
+.ordering div:hover {
+    background: rgba(224, 224, 224, 0.43);
+    color: slateblue;
+}
+
+.smallAlign {
+    margin-left: 20px;
+}
+
+
+.userName {
+    width: 200px;
+    cursor: default;
+    padding-left: 50px;
+    margin-right: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.userName h1 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.admin {
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+}
+
+.admin h1 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    transition: color 0.1s;
+    transition-delay: 0.1s;
+}
+
+.admin h1:hover {
+    color: rgba(42, 227, 189, 0.68);
+    transition-delay: 0s;
+}
+
+.msgCmntFather {
+    display: flex;
+}
+
+.message {
+    border: 1px solid steelblue;
+    width: 25%;
+    margin-left: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.message div {
+    margin-top: 10px;
+    background: steelblue;
+    width: 50%;
+    border-radius: 10px;
+    font-family: Calibri;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message div p {
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.comments {
+    border: 1px solid steelblue;
+    width: 25%;
+    margin-left: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.comments button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background: steelblue;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.comments button:disabled {
+    background: rgba(0, 124, 171, 0.5);
+}
+
+.DetailsFather button:disabled {
+    background: rgba(0, 124, 171, 0.5);
+}
+
+.DetailsFather {
+    margin-top: 10px;
+    overflow: hidden;
+    border: 1px solid steelblue;
+    width: 54.5%;
+    margin-left: 48px;
+    border-radius: 20px;
+    padding: 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DetailsFather button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    margin-top: 10px;
+
+    background: steelblue;
+    border: none;
+
+    border-radius: 10px 10px 0 0;
+
+    height: 30px;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    height: fit-content;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background: steelblue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    min-height: 149px;
+    min-width: 150px;
+}
+
+.details p {
+    margin: 5px;
+}
+
+.statusDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: steelblue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 400px;
+
+    max-height: 20px;
+    gap: 20px;
+}
+
+.statusDiv p {
+    margin: 0;
+
+}
+
+.moreBtn{
+    position: relative;
+    top: -50px;
+    right: 10px;
+    color: deepskyblue;
+    font-size: 60px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.moreBtn:hover{
+    color: #0079a1;
+}

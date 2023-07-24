@@ -1,0 +1,99 @@
+.wrap{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+}
+.main{
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #A8A8ACFF;
+}
+.chk{
+    display: none;
+    font-family: Montserrat, sans-serif;
+}
+.signup{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+
+.wrongData{
+    font-size: 1.7em;
+}
+
+label{
+    color: #fff;
+    font-size: 2.1em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main input{
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.main button{
+    width: 60%;
+    height: 40px;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 20px auto 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+}
+.main button:hover{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(270px);
+    transition: .8s ease-in-out;
+}
+.login label{
+    padding: 12px;
+    color: #000851FF;
+    transform: scale(.6);
+}
+
+.loginClicked{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(10px);
+    /*transition: .8s ease-in-out;*/
+    transition: all 1s ease 0s;
+}
+
+.loginClicked label{
+    color: #000851FF;
+    transform: scale(.6);
+}
