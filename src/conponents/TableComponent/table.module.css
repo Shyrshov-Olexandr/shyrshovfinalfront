@@ -204,7 +204,7 @@
     margin-top: 10px;
     display: flex;
     width: 100%;
-    color: #000851FF;
+    color: #1cb5e0;
     /*gap: 10px;*/
     font-size: 12px;
     font-weight: 500;
@@ -293,7 +293,7 @@
 }
 
 .message {
-    border: 1px solid steelblue;
+    border: 1px solid #1cb5e0;
     width: 25%;
     margin-left: 48px;
     margin-top: 10px;
@@ -304,7 +304,7 @@
 
 .message div {
     margin-top: 10px;
-    background: steelblue;
+    background: #000851;
     width: 50%;
     border-radius: 10px;
     font-family: Montserrat, sans-serif;
@@ -320,7 +320,7 @@
 }
 
 .comments {
-    border: 1px solid steelblue;
+    border: 1px solid #1cb5e0;
     width: 25%;
     margin-left: 48px;
     margin-top: 10px;
@@ -342,7 +342,7 @@
     align-items: center;
 
     padding: 20px;
-    background: steelblue;
+    background: #1cb5e0;
     border: none;
     border-radius: 0 0 10px 10px;
     height: 30px;
@@ -353,17 +353,17 @@
 }
 
 .comments button:disabled {
-    background: rgba(0, 124, 171, 0.5);
+    background: rgb(0, 8, 81);
 }
 
 .DetailsFather button:disabled {
-    background: rgba(0, 124, 171, 0.5);
+    background: rgb(28, 181, 224);
 }
 
 .DetailsFather {
     margin-top: 10px;
     overflow: hidden;
-    border: 1px solid #000851;
+    border: 1px solid #1cb5e0;
     width: 54.5%;
     margin-left: 48px;
     border-radius: 20px;
@@ -382,7 +382,7 @@
     padding: 20px;
     margin-top: 10px;
 
-    background: #000851;
+    background: #1cb5e0;
     border: none;
 
     border-radius: 10px 10px 0 0;
@@ -426,7 +426,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000851;
+    background: #1cb5e0;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -454,5 +454,5 @@
 }
 
 .moreBtn:hover{
-    color: #0079a1;
+    color: #f2c53d;
 }

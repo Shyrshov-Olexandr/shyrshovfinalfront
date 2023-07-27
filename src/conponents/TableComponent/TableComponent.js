@@ -309,7 +309,7 @@ const TableComponent = () => {
                                 <div
                                     style={{
                                         marginTop: '10px',
-                                        border: '1px solid rgba(203, 203, 203, 0.62)',
+                                        border: '1px solid rgb(28, 181, 224)',
                                         padding: '10px'
                                     }}
                                     key={newComment.id}>
@@ -328,7 +328,7 @@ const TableComponent = () => {
                             data.comments.map(comment => <div
                                 style={{
                                     marginTop: '10px',
-                                    border: '1px solid rgba(203, 203, 203, 0.62)',
+                                    border: '1px solid rgb(28, 181, 224)',
                                     padding: '10px'
                                 }}
                                 key={comment.id}>
@@ -511,7 +511,7 @@ const TableComponent = () => {
                     {/*</div>*/}
 
                     <div style={{cursor: 'default'}}>
-                        Mentor
+                        Manager
                     </div>
                 </div>
 

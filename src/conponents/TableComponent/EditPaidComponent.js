@@ -61,7 +61,7 @@ const EditPaidComponent = ({preloadedValues}) => {
     return (
         <div className={css.black}>
             <div className={css.registerForm}>
-                <form style={{height: '600px', background: 'slateblue', boxShadow: '5px 20px 50px #000'}}
+                <form style={{height: '600px', background: 'linear-gradient(90deg, #1CB5E0 0%, #000851 100%)', boxShadow: '5px 20px 50px #000'}}
                       className={css.userForm} onSubmit={
                     showAddGroup ? handleSubmit(createGroup) : handleSubmit(submit)
                 }>
@@ -234,6 +234,7 @@ const EditPaidComponent = ({preloadedValues}) => {
                                 <option value="pro">Pro</option>
                                 <option value="premium">Premium</option>
                                 <option value="incubator">Incubator</option>
+                                <option value="vip">VIP</option>
                             </select>
                         </div>
 

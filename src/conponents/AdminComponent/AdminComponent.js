@@ -196,11 +196,11 @@ const AdminComponent = () => {
                     </h1>
                 </div>
 
-                {/*<div style={{height:'30px'}} onClick={showForm} className={css.button}>*/}
-                {/*    <h1>*/}
-                {/*        Add User*/}
-                {/*    </h1>*/}
-                {/*</div>*/}
+                <div style={{height:'30px'}} onClick={showForm} className={css.button}>
+                    <h1>
+                        Add User
+                    </h1>
+                </div>
             </div>
 
             <div>

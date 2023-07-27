@@ -64,7 +64,7 @@
 
 .black{
     top: 1px;
-    background: rgb(0, 8, 81);
+    background: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -91,7 +91,7 @@
     font-size: 17px;
 
     height: 65px;
-    background: steelblue;
+    background: #000851;
     border:none;
     color: white;
     border-radius: 10px;
@@ -99,7 +99,7 @@
 }
 
 .copyUrl{
-    background: steelblue;
+    background: #1cb5e0;
     text-align: center;
     width: 50%;
     color: white;
@@ -151,7 +151,7 @@
 
 .userForm p {
     color: white;
-    font-family: Calibri;
+    font-family: Montserrat, sans-serif;
     font-weight: bold;
 }
 
@@ -185,9 +185,9 @@
 .span{
     padding: 10px;
     color: red;
-    background: steelblue;
+    background: #1cb5e0;
     border-radius: 10px;
-    font-family: Calibri;
+    font-family: Montserrat, sans-serif;
     font-weight: bolder;
 }
 
