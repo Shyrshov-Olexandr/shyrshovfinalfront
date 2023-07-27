@@ -4,7 +4,7 @@ const urls = {
     signUpIn:
         {
             signIn: '/auth/signin',
-            signUp: '/auth/signup'
+            signUp: '/auth/refresh'
         },
     forAdmin:
         {

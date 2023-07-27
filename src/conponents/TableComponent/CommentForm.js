@@ -26,7 +26,7 @@ const CommentForm = ({show, id}) => {
             <form className={css.form} onSubmit={handleSubmit(commentSubmit)}>
                 <input style={{display:'none'}} defaultValue={id} {...register('id')}/>
                 <input style={{width:'200px'}}  placeholder={'comment'} {...register('comment')}/>
-                <button style={{width:'100px', borderRadius:'10px', transition:'ease-in-out 0.3s'}} disabled={!isValid} type={"submit"}>comment</button>
+                <button style={{width:'100px', borderRadius:'10px', transition:'ease-in-out 0.3s'}} disabled={!isValid} type={"submit"}>Comment</button>
             </form>
             {errors.comment?<span className={css.commentSpan}>{errors.comment.message}</span> :null}
         </>

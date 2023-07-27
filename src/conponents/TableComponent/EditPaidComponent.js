@@ -263,9 +263,9 @@ const EditPaidComponent = ({preloadedValues}) => {
                         <span className={css.span}>Form is invalid</span> : null}
 
                     <div style={{display: 'flex'}}>
-                        <button style={{width: "100px", margin: "10px"}} onClick={closeEdit}>close</button>
+                        <button style={{width: "100px", margin: "10px"}} onClick={closeEdit}>Close</button>
                         <button className={css.submitBtn} disabled={!isValid} style={{width: "100px", margin: "10px",}}
-                                type={"submit"}>submit
+                                type={"submit"}>Submit
                         </button>
                     </div>
                 </form>

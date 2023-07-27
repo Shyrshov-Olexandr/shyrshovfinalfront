@@ -137,7 +137,7 @@
 .paragraphs {
     display: flex;
     flex-direction: column;
-    max-height: 65px;
+    max-height: 50px;
     color: white;
     border-radius: 10px;
 }
@@ -195,7 +195,7 @@
 }
 
 .logout h1:hover {
-    color: rgba(42, 227, 189, 0.68);
+    color: rgb(242, 197, 61);
     transition-delay: 0s;
 }
 
@@ -204,7 +204,7 @@
     margin-top: 10px;
     display: flex;
     width: 100%;
-    color: rgba(0, 0, 0, 0.87);
+    color: #000851FF;
     /*gap: 10px;*/
     font-size: 12px;
     font-weight: 500;
@@ -238,8 +238,8 @@
 }
 
 .ordering div:hover {
-    background: rgba(224, 224, 224, 0.43);
-    color: slateblue;
+    background: linear-gradient(90deg, #000851 0%, #1cb5e0 100%);
+    color: #F2C53DFF;
 }
 
 .smallAlign {
@@ -284,7 +284,7 @@
 }
 
 .admin h1:hover {
-    color: rgba(42, 227, 189, 0.68);
+    color: rgb(242, 197, 61);
     transition-delay: 0s;
 }
 
@@ -307,7 +307,7 @@
     background: steelblue;
     width: 50%;
     border-radius: 10px;
-    font-family: Calibri;
+    font-family: Montserrat, sans-serif;
     color: white;
     font-weight: bold;
     padding: 10px;
@@ -363,7 +363,7 @@
 .DetailsFather {
     margin-top: 10px;
     overflow: hidden;
-    border: 1px solid steelblue;
+    border: 1px solid #000851;
     width: 54.5%;
     margin-left: 48px;
     border-radius: 20px;
@@ -382,7 +382,7 @@
     padding: 20px;
     margin-top: 10px;
 
-    background: steelblue;
+    background: #000851;
     border: none;
 
     border-radius: 10px 10px 0 0;
@@ -407,7 +407,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background: steelblue;
+    background: #000851;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -426,7 +426,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: steelblue;
+    background: #000851;
     color: white;
     font-weight: bold;
     text-align: center;

@@ -8,19 +8,25 @@
 }
 
 .button {
+    background-color: transparent;
     width: fit-content;
     cursor: pointer;
     margin-right: 20px;
     height: 40px;
     display: grid;
     align-items: center;
-    color: steelblue;
+    color: #ffffff;
+    border-radius: 4px;
     padding: 10px;
     font-weight: bold;
     transition: ease-in-out 0.2ms;
 }
+
+.button:hover{
+    color: #F2C53D;
+}
 .button h1:hover{
-    color: rgba(42, 227, 189, 0.68);
+    color: rgb(242, 197, 61);
     transition-delay: 0s;
 }
 
@@ -58,7 +64,7 @@
 
 .black{
     top: 1px;
-    background: rgba(0, 0, 0, 0.73);
+    background: rgb(0, 8, 81);
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -124,7 +130,7 @@
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
+    box-shadow: 5px 20px 50px #c5c3c3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,11 +201,11 @@
 
 .submitBtn{
     transition: ease-in-out 0.2s;
-    background: rgb(0, 124, 171);
+    background: rgb(28, 181, 224);
 }
 
 .submitBtn:disabled{
-    background: rgba(0, 124, 171, 0.54);
+    background: rgb(0, 8, 81);
 }
 
 .field{

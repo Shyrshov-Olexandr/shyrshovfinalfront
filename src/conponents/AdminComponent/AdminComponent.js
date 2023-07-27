@@ -244,7 +244,7 @@ const AdminComponent = () => {
                                 : null}
 
                             {successMessage ?
-                                <p className={css.successMessage} style={{textAlign: "center"}}>url copied <br/>now send
+                                <p className={css.successMessage} style={{textAlign: "center"}}>url copied <br/>Now send
                                     it to user so he could activate account</p>
                                 : null}
                         </div>
