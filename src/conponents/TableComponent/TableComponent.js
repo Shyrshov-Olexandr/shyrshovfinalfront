@@ -364,7 +364,6 @@ const TableComponent = () => {
                 </div>
             </div>
 
-
             <div className={css.mainFather}>
                 <div className={'filters'} style={{
                     display: "flex",
@@ -535,18 +534,6 @@ const TableComponent = () => {
                         : null}
                 </div>
             </div>
-
-
-            <div className={css.black}>
-                <div className={css.editForm}>
-                    {showEdit ?
-                        <div className={css.black}>
-                            <EditPaidComponent preloadedValues={paidById}/>
-                        </div>
-                        : null}
-                </div>
-            </div>
-
             <div className={css.footer}>
                 <button className={css.button} disabled={currentPage === 1} onClick={getPreviousPage}>
                     Previous
@@ -558,6 +545,17 @@ const TableComponent = () => {
                 <button className={css.button} disabled={paidArr.last === true} onClick={getNextPage}>
                     Next
                 </button>
+            </div>
+
+
+            <div className={css.black}>
+                <div className={css.editForm}>
+                    {showEdit ?
+                        <div className={css.black}>
+                            <EditPaidComponent preloadedValues={paidById}/>
+                        </div>
+                        : null}
+                </div>
             </div>
         </div>
     )

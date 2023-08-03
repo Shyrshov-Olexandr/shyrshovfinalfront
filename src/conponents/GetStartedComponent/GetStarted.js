@@ -68,7 +68,7 @@ const GetStartedComponent = () => {
 
             <div className={css.main}>
                 {error ?
-                    <label className={css.wrongData} htmlFor={css.chk} aria-hidden="true">{blocked ? <>user is
+                    <label className={css.wrongData} htmlFor={css.chk} aria-hidden="true">{blocked ? <>User is
                         blocked</> : <>Wrong data</>}</label> :
                     <label htmlFor={css.chk} aria-hidden="true">Welcome!</label>}
                 <div className={loginState}>
@@ -76,14 +76,9 @@ const GetStartedComponent = () => {
                         <label onClick={changeLoginState} htmlFor={css.chk} aria-hidden={"true"}>Login</label>
                         <input type={"email"} name={"email"} placeholder={"Email"} {...register('email')}/>
                         <input type={"password"} name={"pswd"} placeholder={"Password"} {...register('password')} />
-                        {errors.email ?
+                        {errors.email || errors.password ?
                             <div style={{textAlign: "center", width: '100%', color: 'red'}}>
-                                <span style={{width: '100%', margin: '0'}}>Invalid email</span>
-                            </div> : null
-                        }
-                        {errors.password ?
-                            <div style={{textAlign: "center", width: '100%', color: 'red'}}>
-                                <span style={{width: '100%', margin: '0'}}>Invalid password</span>
+                                <span style={{width: '100%', margin: '0'}}>Invalid email or password</span>
                             </div> : null
                         }
                         <button disabled={!isValid} type={"submit"}>Login</button>
