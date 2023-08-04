@@ -521,7 +521,7 @@ const TableComponent = () => {
                         </div> : null}
 
 
-                    {rejected ? <h1 style={{textAlign: 'center', margin: '235.5px'}}>Something went wrong</h1> : null}
+                    {rejected ? <h1 style={{textAlign: 'center', margin: '235.5px'}}>There are no record to display</h1> : null}
                     {success ?
                         <DataTable
                             columns={columns}
